@@ -1,0 +1,68 @@
+# Artist Profile Type
+type Artist {
+  id: ID!
+  name: String!
+  bio: String
+  genre: String
+  socialLinks: [String]
+  events: [Event]
+}
+
+# Event Listing Type
+type Event {
+  id: ID!
+  title: String!
+  description: String
+  date: String!
+  location: String!
+  artist: Artist!
+  availableTickets: Int!
+  price: Float!
+}
+
+# Booking Transaction Type
+type Booking {
+  id: ID!
+  event: Event!
+  user: User!
+  quantity: Int!
+  totalPrice: Float!
+  bookingDate: String!
+}
+
+# User Type
+type User {
+  id: ID!
+  name: String!
+  email: String!
+}
+
+# Queries for retrieving data
+type Query {
+  artists: [Artist]
+  artist(id: ID!): Artist
+  events: [Event]
+  event(id: ID!): Event
+  bookings: [Booking]
+}
+
+# Mutations for data manipulation
+type Mutation {
+  createUser(name: String!, email: String!): User
+  createArtist(name: String!, bio: String, genre: String, socialLinks: [String]): Artist
+  createEvent(
+    title: String!,
+    description: String,
+    date: String!,
+    location: String!,
+    artistId: ID!,
+    availableTickets: Int!
+    price: Float!
+  ): Event
+  bookEvent(eventId: ID!, userId: ID!, quantity: Int!): Booking
+}
+
+schema {
+  query: Query
+  mutation: Mutation
+}

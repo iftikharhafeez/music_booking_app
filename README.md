@@ -1,2 +1,13 @@
-# music_booking_app
-Develop an API for a Music Booking App, handling artist profiles, event listings, and booking transactions.  🔹 Deliverables: GitHub repo with well-structured API endpoints (REST or GraphQL), database schema, and Postman collection for testing.  🔹 Key Skills Assessed: API Design, Security, Scalability, Database Architecture.
+# Music Booking API
+
+This repository contains a GraphQL API for a Music Booking App. It handles artist profiles, event listings, and booking transactions.
+
+## Features
+
+- **GraphQL API** with queries and mutations.
+- **Secure endpoints** using JWT authentication.
+- **Relational database schema** for artists, events, users, and bookings.
+- **Postman collection** provided for testing all endpoints.
+
+## Repository Structure
+

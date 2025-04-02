@@ -1,0 +1,22 @@
+{
+  "name": "music_booking_app",
+  "version": "1.0.0",
+  "description": "This repository contains a GraphQL API for a Music Booking App. It handles artist profiles, event listings, and booking transactions.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Muhammad Iftikhar Hafeez",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server-express": "^3.13.0",
+    "dotenv": "^16.4.7",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^9.0.2",
+    "knex": "^3.1.0",
+    "moment": "^2.30.1",
+    "pg": "^8.14.1"
+  }
+}
