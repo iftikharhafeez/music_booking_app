@@ -74,5 +74,5 @@ https://hypercare-api.postman.co/workspace/New-Team-Workspace~2dd4dd5c-6057-4f5d
 ```bash
 JWT:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInVzZXJuYW1lIjoiYXR0c29wYWwiLCJwYXNzd29yZCI6InRlc3QxMjMhIn0.LmlaMAQ9mJDWF4qOhKWvpgLeIivYJ2LZYciUuE-FhmE
 
-hostname: http://localhost:4000/graphql
+hostname: http://localhost:4000
 ```
